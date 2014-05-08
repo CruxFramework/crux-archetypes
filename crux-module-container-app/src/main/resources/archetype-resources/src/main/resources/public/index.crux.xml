@@ -12,7 +12,7 @@
 	<body>
 		<script type="text/javascript" src="../${module-short-name}/${module-short-name}.nocache.js"></script>
 		<c:screen useController="homeController" onLoad="homeController.onLoad" useView="**/views/*" 
-			smallViewport="user-scalable=no, width=320" largeViewport="user-scalable=no, width=device-width, height=device-height"
+			smallViewport="user-scalable=no, width=320" largeViewport="user-scalable=no"
 			useResource="xStandardResources" height="100%"/>
 		<crux:horizontalSwapViewContainer id="views" height="100%"/>		
 	</body>
