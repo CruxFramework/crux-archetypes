@@ -26,8 +26,9 @@
 
 	<modules>
 		<module>../crux-base-archetype</module>
-		<module>../crux-module-container-app</module>
-		<module>../crux-module-app</module>
+		<module>../crux-helloworld-war</module>
+		<module>../crux-project-jar</module>
+		<module>../crux-project-war</module>
 	</modules>
 
 	<build>

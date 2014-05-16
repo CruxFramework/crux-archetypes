@@ -5,15 +5,21 @@
   <archetypes>
     <archetype>
       <groupId>org.cruxframework</groupId>
-      <artifactId>crux-module-container-app</artifactId>
+      <artifactId>crux-helloworld-war</artifactId>
       <version>[version]</version>
-      <description>Crux application following the module container layout for project.</description>
+      <description>HelloWorld Crux war application.</description>
     </archetype>
     <archetype>
       <groupId>org.cruxframework</groupId>
-      <artifactId>crux-module-app</artifactId>
+      <artifactId>crux-project-jar</artifactId>
       <version>[version]</version>
-      <description>Crux application following the module layout for project.</description>
+      <description>Blank Crux jar application.</description>
+    </archetype>
+    <archetype>
+      <groupId>org.cruxframework</groupId>
+      <artifactId>crux-project-war</artifactId>
+      <version>[version]</version>
+      <description>Blank Crux war application.</description>
     </archetype>
   </archetypes>
 </archetype-catalog>
