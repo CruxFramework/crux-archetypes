@@ -11,15 +11,10 @@
 	
 	<body>
 		<script type="text/javascript" src="../${module-short-name}/${module-short-name}.nocache.js"></script>
-<<<<<<< .working
 		<c:screen 
 			useView="**/views/*" 
 			smallViewport="user-scalable=no, width=320" 
 			largeViewport="user-scalable=no, width=device-width, height=device-height"
-=======
-		<c:screen useController="homeController" onLoad="homeController.onLoad" useView="**/views/*" 
-			smallViewport="user-scalable=no, width=320" largeViewport="user-scalable=no"
->>>>>>> .new
 			useResource="xStandardResources" height="100%"/>
 			
 		<crux:simpleViewContainer id="views">
