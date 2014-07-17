@@ -183,6 +183,16 @@
 					</execution>
 				</executions>
 			</plugin>
+			<!-- Jetty Plugin -->
+            <plugin>
+                <groupId>org.mortbay.jetty</groupId>
+                <artifactId>maven-jetty-plugin</artifactId>
+                <version>6.1.10</version>
+                <configuration>
+                        <webAppSourceDirectory>${webappDirectory}</webAppSourceDirectory>
+                        <contextPath>/</contextPath>
+                </configuration>
+            </plugin>
 		</plugins>
 	</build>
 	<profiles>
@@ -240,6 +250,9 @@
 									<arg value="-sourceDir" />
 									<arg value="${sourceDir}" />
 
+                                    <arg value="-bindAddress" />
+                                    <arg value="0.0.0.0" />
+                                    
 									<arg value="-moduleName" />
 									<arg value="${module-short-name}" />
 
