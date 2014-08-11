@@ -10,7 +10,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<cruxVersion>5.1.0</cruxVersion>
+		<cruxVersion>5.3-SNAPSHOT</cruxVersion>
 		<webappDirectory>${project.build.directory}/${project.artifactId}</webappDirectory>
 		<webinf.folder>${webappDirectory}/WEB-INF/</webinf.folder>
 		<webinf.lib.folder>${webinf.folder}/lib/</webinf.lib.folder>
@@ -145,9 +145,6 @@
 									</classpath>
 								</taskdef>
 
-								<blockremove beginmarker="&lt;!--antReplacementBlockBegin--&gt;"
-									endmarker="&lt;!--antReplacementBlockEnd--&gt;" file="${webinf.folder}/web.xml" />
-
 								<serviceMapper projectDir="${webappDirectory}">
 									<classpath>
 										<path refid="maven.compile.classpath" />
@@ -155,7 +152,7 @@
 									</classpath>
 								</serviceMapper>
 
-								<cruxmodulecompiler srcDir="${sourceDir}"
+								<cruxcompiler srcDir="${sourceDir}"
 									keepPagesGeneratedFiles="true" outputDir="${webappDirectory}"
 									webDir="${webappDirectory}" pagesOutputDir="${webappDirectory}"
 									outputCharset="UTF-8" doNotPreCompileJavaSource="true"
@@ -174,7 +171,7 @@
 									<!-- use these parameters if you want to modify GWT output settings 
 										<arg value="-style"/> <arg value="DETAILED"/> <arg value="-logLevel"/> <arg 
 										value="DEBUG"/> -->
-								</cruxmodulecompiler>
+								</cruxcompiler>
 							</target>
 						</configuration>
 						<goals>
@@ -183,16 +180,6 @@
 					</execution>
 				</executions>
 			</plugin>
-			<!-- Jetty Plugin -->
-			<plugin>
-                <groupId>org.mortbay.jetty</groupId>
-                <artifactId>maven-jetty-plugin</artifactId>
-                <version>6.1.10</version>
-                <configuration>
-                        <webAppSourceDirectory>${webappDirectory}</webAppSourceDirectory>
-                        <contextPath>/</contextPath>
-                </configuration>
-            </plugin>
 		</plugins>
 	</build>
 	<profiles>
@@ -209,7 +196,7 @@
 						<version>1.6</version>
 						<configuration>
 							<target>
-								<taskdef resource="org/cruxframework/crux/tools/crux-module-tools.xml">
+								<taskdef resource="org/cruxframework/crux/tools/crux-tools.xml">
 									<classpath>
 										<path refid="maven.compile.classpath" />
 									</classpath>
@@ -221,44 +208,6 @@
 										<pathelement location="${sourceDir}" />
 									</classpath>
 								</generateSchemas>
-							</target>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-		<!-- Run Code Server -->
-		<profile>
-			<id>run-codeserver</id>
-			<activation>
-				<activeByDefault>false</activeByDefault>
-			</activation>
-			<build>
-				<plugins>
-					<plugin>
-						<artifactId>maven-antrun-plugin</artifactId>
-						<version>1.6</version>
-						<configuration>
-							<target>
-								<echo message="Starting Code server..." />
-								<java classname="org.cruxframework.crux.tools.codeserver.CodeServer"
-									fork="true">
-									<classpath>
-										<path refid="maven.compile.classpath" />
-										<pathelement location="${webinf.classes.folder}" />
-									</classpath>
-									<arg value="-sourceDir" />
-									<arg value="${sourceDir}" />
-
-                                    <arg value="-bindAddress" />
-                                    <arg value="0.0.0.0" />
-
-									<arg value="-moduleName" />
-									<arg value="${module-short-name}" />
-
-									<jvmarg value="-Xmx768M" />
-									<jvmarg value="-Xms256M" />
-								</java>
 							</target>
 						</configuration>
 					</plugin>

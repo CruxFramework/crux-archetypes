@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.cruxframework</groupId>
 	<artifactId>crux-base-archetype</artifactId>
-	<version>5.1.0</version>
+	<version>5.3</version>
 	<packaging>pom</packaging>
 	<name>crux-base-archetype</name>
 	<description>Parent POM for crux archetypes</description>
