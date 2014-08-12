@@ -1,0 +1,1 @@
+crux-archetypes and crux-base-archetypes must be installed (maven install) separately before run the launch file.
