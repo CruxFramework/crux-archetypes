@@ -24,13 +24,6 @@
 		<url>https://crux-framework.googlecode.com/svn/trunk/archetypes</url>
 	</scm>
 
-	<modules>
-		<module>../crux-base-archetype</module>
-		<module>../crux-helloworld-war</module>
-		<module>../crux-project-jar</module>
-		<module>../crux-project-war</module>
-	</modules>
-
 	<build>
 		<resources>
 			<resource>

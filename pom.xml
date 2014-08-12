@@ -8,6 +8,7 @@
 	<name>crux-archetypes</name>
 
 	<modules>
+		<module>crux-archetypes</module>
 		<module>crux-base-archetype</module>
 		<module>crux-helloworld-war</module>
 		<module>crux-project-jar</module>
