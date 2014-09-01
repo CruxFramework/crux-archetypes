@@ -9,9 +9,9 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<cruxVersion>5.1.2</cruxVersion>
+		<cruxVersion>5.1.3</cruxVersion>
 		<webappDirectory>${project.build.directory}/${project.artifactId}</webappDirectory>
-		<webinf.lib.folder>${webappDirectory}/WEB-INF/lib/</webinf.lib.folder>
+		<webinf.lib.folder>${webappDirectory}/WEB-INF/lib</webinf.lib.folder>
 		<webinf.classes.folder>${webappDirectory}/WEB-INF/classes/</webinf.classes.folder>
 		<webappSourceDir>${basedir}/src/main/webapp</webappSourceDir>
 		<sourceDir>${project.build.sourceDirectory}</sourceDir>
