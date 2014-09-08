@@ -9,12 +9,10 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<cruxVersion>5.2.0-SNAPSHOT</cruxVersion>
+		<cruxVersion>5.3-SNAPSHOT</cruxVersion>
 		<webappDirectory>${project.build.directory}/${project.artifactId}</webappDirectory>
-		<webinf.lib.folder>${webappDirectory}/WEB-INF/lib/</webinf.lib.folder>
 		<webinf.classes.folder>${webappDirectory}/WEB-INF/classes/</webinf.classes.folder>
 		<webappSourceDir>${basedir}/src/main/webapp</webappSourceDir>
-		<sourceDir>${project.build.sourceDirectory}</sourceDir>
 		<xsd.dir>${basedir}/xsd</xsd.dir>
 		<crawling.dir>${basedir}/crawling</crawling.dir>
 	</properties>
@@ -96,7 +94,7 @@
 							<outputDirectory>${project.build.outputDirectory}</outputDirectory>
 							<resources>
 								<resource>
-									<directory>${sourceDir}</directory>
+									<directory>${project.build.sourceDirectory}</directory>
 								</resource>
 							</resources>
 						</configuration>

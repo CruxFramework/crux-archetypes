@@ -10,13 +10,11 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<cruxVersion>5.2.0-SNAPSHOT</cruxVersion>
+		<cruxVersion>5.3-SNAPSHOT</cruxVersion>
 		<webappDirectory>${project.build.directory}/${project.artifactId}</webappDirectory>
 		<webinf.folder>${webappDirectory}/WEB-INF/</webinf.folder>
-		<webinf.lib.folder>${webinf.folder}/lib/</webinf.lib.folder>
 		<webinf.classes.folder>${webinf.folder}/classes/</webinf.classes.folder>
 		<webappSourceDir>${basedir}/src/main/webapp</webappSourceDir>
-		<sourceDir>${project.build.sourceDirectory}</sourceDir>
 		<xsd.dir>${basedir}/xsd</xsd.dir>
 		<crawling.dir>${basedir}/crawling</crawling.dir>
 	</properties>
@@ -152,7 +150,7 @@
 									</classpath>
 								</serviceMapper>
 
-								<cruxcompiler srcDir="${sourceDir}"
+								<cruxcompiler srcDir="${project.build.sourceDirectory}"
 									keepPagesGeneratedFiles="true" outputDir="${webappDirectory}"
 									webDir="${webappDirectory}" pagesOutputDir="${webappDirectory}"
 									outputCharset="UTF-8" doNotPreCompileJavaSource="true"
@@ -205,7 +203,7 @@
 									inputCharset="UTF-8">
 									<classpath>
 										<path refid="maven.compile.classpath" />
-										<pathelement location="${sourceDir}" />
+										<pathelement location="${project.build.sourceDirectory}" />
 									</classpath>
 								</generateSchemas>
 							</target>
