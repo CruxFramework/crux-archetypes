@@ -3,6 +3,7 @@
 	xmlns="http://www.w3.org/1999/xhtml" 
 	xmlns:c="http://www.cruxframework.org/crux" 
 	xmlns:crux="http://www.cruxframework.org/crux/widgets"
+	xmlns:faces="http://www.cruxframework.org/crux/smart-faces"
 	xmlns:gwt="http://www.cruxframework.org/crux/gwt">
 	
 	<head>
@@ -13,7 +14,7 @@
 		<script type="text/javascript" src="../${module-short-name}/${module-short-name}.nocache.js"></script>
 		<c:screen useView="*" 
 			smallViewport="user-scalable=no, width=320" largeViewport="user-scalable=no, width=device-width, height=device-height"
-			useResource="xStandardResources" height="100%"/>
+			useResource="xStandardResources,smartFacesResources" height="100%"/>
 		
 	</body>
 </html>
