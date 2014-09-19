@@ -33,6 +33,11 @@
 			<artifactId>crux-widgets</artifactId>
 			<version>${cruxVersion}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.cruxframework</groupId>
+			<artifactId>crux-smart-faces</artifactId>
+			<version>1.2-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>

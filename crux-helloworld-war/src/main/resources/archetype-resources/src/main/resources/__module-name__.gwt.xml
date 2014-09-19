@@ -1,11 +1,13 @@
 <module rename-to='${module-short-name}'>
-    <inherits name='org.cruxframework.crux.core.Crux' />
-    <inherits name='org.cruxframework.crux.gwt.CruxGWTWidgets' />
-    <inherits name='org.cruxframework.crux.widgets.CruxWidgets' />
-    <inherits name='org.cruxframework.crux.crossdevice.CrossDeviceWidgets' />
-    <inherits name='org.cruxframework.crux.themes.widgets.xstandard.XStandard' />
+	<inherits name='org.cruxframework.crux.core.Crux' />
+	<inherits name='org.cruxframework.crux.gwt.CruxGWTWidgets' />
+	<inherits name='org.cruxframework.crux.widgets.CruxWidgets' />
+	<inherits name='org.cruxframework.crux.crossdevice.CrossDeviceWidgets' />
+	<inherits name='org.cruxframework.crux.themes.widgets.xstandard.XStandard' />
+	<inherits name='org.cruxframework.crux.smartfaces.CruxSmartFaces' />
+	<inherits name='org.cruxframework.crux.smartfaces.themes.Default'/>
 
-    <!-- ******* To enable superdevmode ******* -->
+	<!-- ******* To enable superdevmode ******* -->
     
     <inherits name='org.cruxframework.crux.tools.codeserver.CruxCodeServer' />
     
@@ -15,11 +17,11 @@
     <!-- ******* Compilations options ******* -->
     
     <!-- Define your browser -->
-    <set-property name="user.agent" values="safari" />
-    <!-- <set-property name="user.agent" values="gecko1_8" /> -->
-    <!-- <set-property name="user.agent" values="opera" /> -->
-    <!-- <set-property name="user.agent" values="ie9"/> -->
-    <!-- <set-property name="user.agent" values="ie10"/> -->
+    <set-property name="user.agent" value="safari" />
+    <!-- <set-property name="user.agent" value="gecko1_8" /> -->
+    <!-- <set-property name="user.agent" value="opera" /> -->
+    <!-- <set-property name="user.agent" value="ie9"/> -->
+    <!-- <set-property name="user.agent" value="ie10"/> -->
   
     <!-- Define your device type -->
     <set-property name="device.features" value="largeDisplayMouse"/>

@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>crux-project-war</artifactId>
-	<version>5.2.0</version>
+	<version>5.3-SNAPSHOT</version>
 	<name>crux-project-war</name>
 	<description>Blank Crux war application.</description>
 	<packaging>maven-archetype</packaging>
