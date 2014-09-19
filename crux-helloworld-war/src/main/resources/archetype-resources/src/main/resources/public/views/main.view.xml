@@ -4,7 +4,7 @@
     xmlns:core="http://www.cruxframework.org/crux" 
     xmlns:crux="http://www.cruxframework.org/crux/widgets"
     xmlns:gwt="http://www.cruxframework.org/crux/gwt"
-    useResource="xStandardResources"
+    xmlns:faces="http://www.cruxframework.org/crux/smart-faces"
     useController="mainController"
     onLoad="mainController.onLoad">
     
