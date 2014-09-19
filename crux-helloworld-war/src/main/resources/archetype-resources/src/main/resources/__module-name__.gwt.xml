@@ -4,6 +4,8 @@
 	<inherits name='org.cruxframework.crux.widgets.CruxWidgets' />
 	<inherits name='org.cruxframework.crux.crossdevice.CrossDeviceWidgets' />
 	<inherits name='org.cruxframework.crux.themes.widgets.xstandard.XStandard' />
+	<inherits name='org.cruxframework.crux.smartfaces.CruxSmartFaces' />
+	<inherits name='org.cruxframework.crux.smartfaces.themes.Default'/>
 
 	<!-- ******* To enable superdevmode ******* -->
     

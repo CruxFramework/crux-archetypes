@@ -13,7 +13,7 @@
 		<script type="text/javascript" src="../${module-short-name}/${module-short-name}.nocache.js"></script>
 		<c:screen useView="*" 
 			smallViewport="user-scalable=no, width=320" largeViewport="user-scalable=no, width=device-width, height=device-height"
-			useResource="xStandardResources" height="100%"/>
+			useResource="xStandardResources,smartFacesResources" height="100%"/>
 		
 	</body>
 </html>
