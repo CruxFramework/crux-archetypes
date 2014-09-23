@@ -199,7 +199,7 @@
 						<version>1.6</version>
 						<configuration>
 							<target>
-								<taskdef resource="org/cruxframework/crux/tools/crux-module-tools.xml">
+								<taskdef resource="org/cruxframework/crux/tools/crux-tools.xml">
 									<classpath>
 										<path refid="maven.compile.classpath" />
 									</classpath>
