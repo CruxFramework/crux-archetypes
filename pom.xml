@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.cruxframework</groupId>
 	<artifactId>archetypes</artifactId>
-	<version>5.2.0</version>
+	<version>5.3.0</version>
 	<packaging>pom</packaging>
 
 	<properties>
@@ -11,6 +11,7 @@
 	</properties>
 
 	<modules>
+		<module>crux-base-archetype</module>
 		<module>crux-archetypes</module>
 		<module>crux-helloworld-war</module>
 		<module>crux-project-jar</module>
