@@ -1,0 +1,18 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>crux-project-jar</artifactId>
+	<version>5.3.0</version>
+	<name>crux-project-jar</name>
+	<description>Blank Crux jar application.</description>
+	<packaging>maven-archetype</packaging>
+	<url>http://maven.apache.org</url>
+
+	<parent>
+		<groupId>org.cruxframework</groupId>
+		<artifactId>crux-base-archetype</artifactId>
+		<version>5.3.0</version>
+		<relativePath>org.cruxframework:crux-base-archetype</relativePath>
+	</parent>
+	
+</project>

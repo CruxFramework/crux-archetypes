@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+	<welcome-file-list>
+		<welcome-file>${module-short-name}/index.html</welcome-file>
+	</welcome-file-list>
+
+	<context-param>
+		<param-name>outputCharset</param-name>
+		<param-value>UTF-8</param-value>
+	</context-param>
+
+	<listener>
+		<listener-class>org.cruxframework.crux.core.server.InitializerListener</listener-class>
+	</listener>
+
+	<servlet>
+		<servlet-name>remoteServiceServlet</servlet-name>
+		<servlet-class>org.cruxframework.crux.core.server.dispatch.RemoteServiceServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>remoteServiceServlet</servlet-name>
+		<url-pattern>*.rpc</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>restServiceServlet</servlet-name>
+		<servlet-class>org.cruxframework.crux.core.server.rest.servlet.RestServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>restServiceServlet</servlet-name>
+		<url-pattern>/rest/*</url-pattern>
+	</servlet-mapping>
+</web-app>
