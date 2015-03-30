@@ -1,0 +1,16 @@
+<v:view 
+    xmlns="http://www.w3.org/1999/xhtml" 
+    xmlns:v="http://www.cruxframework.org/view" 
+    xmlns:core="http://www.cruxframework.org/crux" 
+    xmlns:crux="http://www.cruxframework.org/crux/widgets"
+    xmlns:gwt="http://www.cruxframework.org/crux/gwt"
+    xmlns:faces="http://www.cruxframework.org/crux/smart-faces"
+    useController="mainController"
+    onLoad="mainController.onLoad">
+    
+    <crux:storyboard id="mainPanel" style="display:block; margin: 50px">
+         <gwt:textBox id="nameTextBox"/>
+         <crux:button id="okButton" text="Go!" onSelect="mainController.sayOk"/>
+    </crux:storyboard>
+    
+</v:view>
