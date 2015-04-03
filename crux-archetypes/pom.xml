@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.cruxframework</groupId>
 	<artifactId>crux-archetypes</artifactId>
-	<version>5.3-SNAPSHOT</version>
+	<version>5.4-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>crux-archetypes</name>
 	<description>Generates the archetypes catalog xml for all crux archetypes</description>
