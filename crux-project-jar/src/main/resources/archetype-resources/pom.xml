@@ -9,7 +9,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<cruxVersion>5.3.0</cruxVersion>
+		<cruxVersion>5.3.1</cruxVersion>
 		<webappDirectory>${project.build.directory}/${project.artifactId}</webappDirectory>
 		<webinf.classes.folder>${webappDirectory}/WEB-INF/classes/</webinf.classes.folder>
 		<webappSourceDir>${basedir}/src/main/webapp</webappSourceDir>
@@ -36,7 +36,7 @@
 		<dependency>
 			<groupId>org.cruxframework</groupId>
 			<artifactId>crux-smart-faces</artifactId>
-			<version>1.2.0</version>
+			<version>1.2.1</version>
 		</dependency>
 	</dependencies>
 
