@@ -11,7 +11,6 @@
 	</properties>
 
 	<modules>
-		<module>crux-base-archetype</module>
 		<module>crux-archetypes</module>
 		<module>crux-helloworld-war</module>
 		<module>crux-project-jar</module>

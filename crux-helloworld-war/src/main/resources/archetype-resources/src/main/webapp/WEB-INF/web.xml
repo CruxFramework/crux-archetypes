@@ -2,7 +2,7 @@
 <web-app>
 
 	<welcome-file-list>
-		<welcome-file>${module-short-name}/index.html</welcome-file>
+		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
 
 	<context-param>
