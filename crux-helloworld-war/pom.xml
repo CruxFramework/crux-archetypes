@@ -11,8 +11,7 @@
 	<parent>
 		<groupId>org.cruxframework</groupId>
 		<artifactId>crux-base-archetype</artifactId>
-		<version>5.4-SNAPSHOT</version>
-		<relativePath>org.cruxframework:crux-base-archetype</relativePath>
+		<version>5.4.0</version>
 	</parent>
 	
 </project>
