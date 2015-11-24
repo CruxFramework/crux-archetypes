@@ -1,15 +1,16 @@
-<v:view xmlns="http://www.w3.org/1999/xhtml" 
+<v:view
+	xmlns="http://www.w3.org/1999/xhtml" 
 	xmlns:v="http://www.cruxframework.org/view" 
-	xmlns:c="http://www.cruxframework.org/crux" 
-	xmlns:w="http://www.cruxframework.org/crux/widgets"
-	xmlns:g="http://www.cruxframework.org/crux/gwt"
-	xmlns:f="http://www.cruxframework.org/crux/smart-faces"
+	xmlns:crux="http://www.cruxframework.org/crux" 
+	xmlns:gwt="http://www.cruxframework.org/crux/gwt"
+	xmlns:widgets="http://www.cruxframework.org/crux/widgets"
+	xmlns:faces="http://www.cruxframework.org/crux/smart-faces"
 	useController="mainController"
 	onLoad="mainController.onLoad">
     
-	<w:storyboard id="mainPanel" style="display:block; margin: 50px">
-		<g:textBox id="nameTextBox"/>
-		<f:button id="okButton" text="Go!" onSelect="mainController.sayOk"/>
-	</w:storyboard>
+	<widgets:storyboard id="mainPanel">
+		<gwt:textBox id="nameTextBox"/>
+		<faces:button id="okButton" text="Go!" onSelect="mainController.sayOk"/>
+	</widgets:storyboard>
     
 </v:view>
