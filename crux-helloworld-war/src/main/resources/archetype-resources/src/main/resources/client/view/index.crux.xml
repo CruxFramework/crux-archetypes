@@ -1,10 +1,9 @@
-<!DOCTYPE html>
 <html
 	xmlns="http://www.w3.org/1999/xhtml" 
-	xmlns:c="http://www.cruxframework.org/crux" 
-	xmlns:w="http://www.cruxframework.org/crux/widgets"
-	xmlns:f="http://www.cruxframework.org/crux/smart-faces"
-	xmlns:g="http://www.cruxframework.org/crux/gwt">
+	xmlns:crux="http://www.cruxframework.org/crux" 
+	xmlns:gwt="http://www.cruxframework.org/crux/gwt"
+	xmlns:widgets="http://www.cruxframework.org/crux/widgets"
+	xmlns:faces="http://www.cruxframework.org/crux/smart-faces">
 	
 	<head>
 		<title>Crux Framework</title>
@@ -13,14 +12,15 @@
 	<body>
 		<script type="text/javascript" src="${module-short-name}/${module-short-name}.nocache.js"></script>
 
-		<c:screen 
+		<crux:screen 
 			useView="*" 
 			smallViewport="user-scalable=no, width=320" 
 			largeViewport="user-scalable=no, width=device-width, height=device-height"
-			useResource="xStandardResources,smartFacesResources" height="100%"/>
+			useResource="xStandardResources,smartFacesResources" 
+			height="100%"/>
 			
-		<f:simpleViewContainer id="views">
-			<f:view name="main"/>
-		</f:simpleViewContainer>		
+		<faces:simpleViewContainer id="views">
+			<faces:view name="main"/>
+		</faces:simpleViewContainer>		
 	</body>
 </html>
