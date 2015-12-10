@@ -82,6 +82,9 @@
 		                </goals>
 					</execution>
 				</executions>
+				<configuration>
+					<sourceVersion>${java.source.version}</sourceVersion>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
