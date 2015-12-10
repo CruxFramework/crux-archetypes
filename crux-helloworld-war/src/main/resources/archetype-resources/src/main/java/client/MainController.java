@@ -5,8 +5,8 @@ import org.cruxframework.crux.core.client.controller.Expose;
 import org.cruxframework.crux.core.client.ioc.Inject;
 import org.cruxframework.crux.core.client.screen.views.BindView;
 import org.cruxframework.crux.core.client.screen.views.WidgetAccessor;
-import org.cruxframework.crux.widgets.client.dialog.FlatMessageBox;
-import org.cruxframework.crux.widgets.client.dialog.FlatMessageBox.MessageType;
+import org.cruxframework.crux.smartfaces.client.dialog.MessageBox;
+import org.cruxframework.crux.smartfaces.client.dialog.MessageBox.MessageType;
 
 import com.google.gwt.user.client.ui.TextBox;
 
@@ -25,7 +25,7 @@ public class MainController
     @Expose   
     public void sayOk()
     {
-    	FlatMessageBox.show("OK : " + screen.nameTextBox().getText() , MessageType.INFO);
+    	MessageBox.show("OK : " + screen.nameTextBox().getText() , MessageType.INFO);
     }  
     
     @BindView("main")
